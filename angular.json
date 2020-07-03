@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./node_modules/font-awesome/scss/font-awesome.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "idle"
+    }
+  },
+  "defaultProject": "idle",
+  "cli": {
+    "analytics": "645f9858-4533-4178-b0dd-4eda86025099"
+  }
 }
