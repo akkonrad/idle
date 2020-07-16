@@ -17,9 +17,7 @@ export class AppComponent implements OnDestroy {
   subscriptions: Subscription[] = [];
 
   constructor(private engine: EngineService) {
-    this.subscriptions.push(this.engine.time$.subscribe(time => {
-      this.time = time;
-    }));
+    this.engine.start();
   }
 
   ngOnDestroy(): void {
