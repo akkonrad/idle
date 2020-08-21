@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EngineService } from './engine.service';
 import { ValueDisplayComponent } from './components/value-display/value-display.component';
 import { reducer } from './store/time.reducers';
+import { SelectorsService } from './store/time.selectors';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { reducer } from './store/time.reducers';
     }),
     StoreDevtoolsModule.instrument()
   ],
-  providers: [EngineService],
+  providers: [EngineService, SelectorsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
