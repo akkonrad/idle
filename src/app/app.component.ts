@@ -3,7 +3,6 @@ import { Subscription } from 'rxjs';
 
 import { Color } from './types';
 import { EngineService } from './engine.service';
-import { TimeService } from './services/time.service';
 import { SelectorsService } from './store/time.selectors';
 
 @Component({
