@@ -6,7 +6,7 @@
 
 <div class="container">
   <div class="row">
-    <app-value-display class="col-4 text-light" [icon]="'dollar'" [title]="'money'" [value]="0" [color]="'danger'">
+    <app-value-display class="col-4 text-light" [icon]="'dollar'" [title]="'money'" [value]="money" [color]="'danger'">
       how much money you have
     </app-value-display>
     
@@ -23,5 +23,9 @@
 <div class="p-3 mb-2 bg-light text-dark">
   <div class="container">
     <h5>Items</h5>
+
+    <div class="row">
+      <app-item class="m-1 p-1" *ngFor="let item of items" [item]="item"></app-item>
+    </div>
   </div>
 </div>
